@@ -42,7 +42,6 @@ class Headline
 			if (line =~ /^TIMS=(.*)/) != nil
 				channel = Channel.new if channel == nil
 				channel.tims = DateTime.strptime($1 + " +9", '%y/%m/%d %H:%M:%s %z')
-				#12/10/17 19:34:04
 				next
 			end
 
